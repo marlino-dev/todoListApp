@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A5C1F16C26390E0A0076C36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F16B26390E0A0076C36C /* AppDelegate.swift */; };
 		A5C1F16E26390E0A0076C36C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */; };
-		A5C1F17026390E0A0076C36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F16F26390E0A0076C36C /* ViewController.swift */; };
 		A5C1F17326390E0A0076C36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17126390E0A0076C36C /* Main.storyboard */; };
 		A5C1F17526390E0A0076C36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17426390E0A0076C36C /* Assets.xcassets */; };
 		A5C1F17826390E0A0076C36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17626390E0A0076C36C /* LaunchScreen.storyboard */; };
+		A5C1F1822639105D0076C36C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1812639105D0076C36C /* HomeViewController.swift */; };
+		A5C1F1862639112E0076C36C /* ImportantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1852639112E0076C36C /* ImportantViewController.swift */; };
+		A5C1F196263919210076C36C /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F195263919210076C36C /* ToDoItem.swift */; };
+		A5C1F1BC263A03930076C36C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1BB263A03930076C36C /* AddViewController.swift */; };
+		A5C1F1C0263A3A2D0076C36C /* labelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1BE263A3A2D0076C36C /* labelCell.swift */; };
+		A5C1F1C1263A3A2D0076C36C /* labelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F1BF263A3A2D0076C36C /* labelCell.xib */; };
+		A5C1F1C5263A4D170076C36C /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1C3263A4D170076C36C /* DateTableViewCell.swift */; };
+		A5C1F1C6263A4D170076C36C /* DateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F1C4263A4D170076C36C /* DateTableViewCell.xib */; };
+		BF60C0F1FDE6B0A04E20CA7D /* Pods_toDoNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEB3A0EDFEB9063DC9FB809 /* Pods_toDoNav.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2121FC4292C38EE728FEE134 /* Pods-toDoNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoNav.release.xcconfig"; path = "Target Support Files/Pods-toDoNav/Pods-toDoNav.release.xcconfig"; sourceTree = "<group>"; };
+		3BCE9B3D2B7697A24201037E /* Pods-toDoNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoNav.debug.xcconfig"; path = "Target Support Files/Pods-toDoNav/Pods-toDoNav.debug.xcconfig"; sourceTree = "<group>"; };
 		A5C1F16826390E0A0076C36C /* toDoNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1F16B26390E0A0076C36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C1F16F26390E0A0076C36C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5C1F17226390E0A0076C36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C1F17426390E0A0076C36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C1F17726390E0A0076C36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C1F17926390E0A0076C36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C1F1812639105D0076C36C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5C1F1852639112E0076C36C /* ImportantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantViewController.swift; sourceTree = "<group>"; };
+		A5C1F195263919210076C36C /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		A5C1F1BB263A03930076C36C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		A5C1F1BE263A3A2D0076C36C /* labelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCell.swift; sourceTree = "<group>"; };
+		A5C1F1BF263A3A2D0076C36C /* labelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = labelCell.xib; sourceTree = "<group>"; };
+		A5C1F1C3263A4D170076C36C /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		A5C1F1C4263A4D170076C36C /* DateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTableViewCell.xib; sourceTree = "<group>"; };
+		ADEB3A0EDFEB9063DC9FB809 /* Pods_toDoNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toDoNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF60C0F1FDE6B0A04E20CA7D /* Pods_toDoNav.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BE42DA873D933FC03AB4BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB3A0EDFEB9063DC9FB809 /* Pods_toDoNav.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5C1F15F26390E0A0076C36C = {
 			isa = PBXGroup;
 			children = (
 				A5C1F16A26390E0A0076C36C /* toDoNav */,
 				A5C1F16926390E0A0076C36C /* Products */,
+				C5901F92DE6C89A1893840B3 /* Pods */,
+				6BE42DA873D933FC03AB4BD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +87,29 @@
 			children = (
 				A5C1F16B26390E0A0076C36C /* AppDelegate.swift */,
 				A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */,
-				A5C1F16F26390E0A0076C36C /* ViewController.swift */,
+				A5C1F1812639105D0076C36C /* HomeViewController.swift */,
+				A5C1F1852639112E0076C36C /* ImportantViewController.swift */,
+				A5C1F195263919210076C36C /* ToDoItem.swift */,
 				A5C1F17126390E0A0076C36C /* Main.storyboard */,
 				A5C1F17426390E0A0076C36C /* Assets.xcassets */,
 				A5C1F17626390E0A0076C36C /* LaunchScreen.storyboard */,
 				A5C1F17926390E0A0076C36C /* Info.plist */,
+				A5C1F1BB263A03930076C36C /* AddViewController.swift */,
+				A5C1F1C3263A4D170076C36C /* DateTableViewCell.swift */,
+				A5C1F1C4263A4D170076C36C /* DateTableViewCell.xib */,
+				A5C1F1BE263A3A2D0076C36C /* labelCell.swift */,
+				A5C1F1BF263A3A2D0076C36C /* labelCell.xib */,
 			);
 			path = toDoNav;
+			sourceTree = "<group>";
+		};
+		C5901F92DE6C89A1893840B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE9B3D2B7697A24201037E /* Pods-toDoNav.debug.xcconfig */,
+				2121FC4292C38EE728FEE134 /* Pods-toDoNav.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C1F17C26390E0A0076C36C /* Build configuration list for PBXNativeTarget "toDoNav" */;
 			buildPhases = (
+				7990E323DE74A2257BB4DAD2 /* [CP] Check Pods Manifest.lock */,
 				A5C1F16426390E0A0076C36C /* Sources */,
 				A5C1F16526390E0A0076C36C /* Frameworks */,
 				A5C1F16626390E0A0076C36C /* Resources */,
+				408F98CE8AED43075DEF970D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +171,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C1F1C6263A4D170076C36C /* DateTableViewCell.xib in Resources */,
 				A5C1F17826390E0A0076C36C /* LaunchScreen.storyboard in Resources */,
 				A5C1F17526390E0A0076C36C /* Assets.xcassets in Resources */,
+				A5C1F1C1263A3A2D0076C36C /* labelCell.xib in Resources */,
 				A5C1F17326390E0A0076C36C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		408F98CE8AED43075DEF970D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-toDoNav/Pods-toDoNav-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-toDoNav/Pods-toDoNav-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-toDoNav/Pods-toDoNav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7990E323DE74A2257BB4DAD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-toDoNav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5C1F16426390E0A0076C36C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C1F17026390E0A0076C36C /* ViewController.swift in Sources */,
+				A5C1F196263919210076C36C /* ToDoItem.swift in Sources */,
+				A5C1F1C0263A3A2D0076C36C /* labelCell.swift in Sources */,
 				A5C1F16C26390E0A0076C36C /* AppDelegate.swift in Sources */,
+				A5C1F1C5263A4D170076C36C /* DateTableViewCell.swift in Sources */,
+				A5C1F1BC263A03930076C36C /* AddViewController.swift in Sources */,
 				A5C1F16E26390E0A0076C36C /* SceneDelegate.swift in Sources */,
+				A5C1F1862639112E0076C36C /* ImportantViewController.swift in Sources */,
+				A5C1F1822639105D0076C36C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +379,7 @@
 		};
 		A5C1F17D26390E0A0076C36C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCE9B3D2B7697A24201037E /* Pods-toDoNav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		A5C1F17E26390E0A0076C36C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2121FC4292C38EE728FEE134 /* Pods-toDoNav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
