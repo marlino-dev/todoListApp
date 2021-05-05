@@ -8,10 +8,9 @@
 import RealmSwift
 import UIKit
 
-var todoItem: ToDoItem = ToDoItem()
-
 class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
+    var isDismissed: (() -> Void)?
     let realm = try! Realm()
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,11 +20,15 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func didTapDoneButton(_ sender: Any) {
-        try! realm.write {
-            realm.add(todoItem)
+        let todoItem: ToDoItem = ToDoItem()
+        todoItem.title = labelCellManager.shared.labelText
+        todoItem.date = datePickerManager.shared.vc.datePicker.date
+        print(todoItem.title!, todoItem.date!)
+        try! self.realm.write {
+            self.realm.add(todoItem)
         }
+        ReloadManager.shared.HomeVC.refresh()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -39,17 +42,21 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
         tableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if (section == 0) {
-            return "Todo Item"
-        } else if (section == 1) {
-            return "Schedule a Time"
+            return "To-do Item"
         } else {
-            return " "
+            return "Schedule a Time"
         }
     }
     
@@ -60,32 +67,15 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let fieldCell = tableView.dequeueReusableCell(withIdentifier: labelCell.identifier, for: indexPath) as! labelCell
         let dateCell = tableView.dequeueReusableCell(withIdentifier: DateTableViewCell.identifier, for: indexPath) as! DateTableViewCell
         
-        let mySwitch = UISwitch()
-        mySwitch.addTarget(self, action: #selector(didToggleSwitch(_:) ), for: .valueChanged)
-        cell.accessoryView = mySwitch
         
         if (indexPath.section == 0) {
-            todoItem.title = fieldCell.textLabel?.text
             return fieldCell
-        } else if (indexPath.section == 1) {
+        } else  {
             print(dateCell.datePicker.date)
             return dateCell
-        } else {
-            cell.textLabel?.text = "Important"
-        }
-        return cell
-    }
-    
-    @objc func didToggleSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            todoItem.important = true
-        } else {
-            todoItem.important = false
         }
     }
-
 }
