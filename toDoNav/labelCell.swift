@@ -19,14 +19,24 @@ class labelCell: UITableViewCell, UITextFieldDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        labelCellManager.shared.vc = self
         itemText.delegate = self
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         itemText.resignFirstResponder()
-        todoItem.title = textField.text ?? ""
-        print("\(todoItem.title ?? "")")
+        labelCellManager.shared.labelText = itemText.text!
+        print(textField.text!)
         return true
+    }
+    
+    func getTextFieldText() -> String {
+        if let text = itemText.text, !text.isEmpty {
+            return text
+        } else {
+            print("Add something")
+            return " "
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
