@@ -33,6 +33,7 @@ class DateTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        datePickerManager.shared.vc = self
         datePicker.setDate(Date(), animated: true)
         datePicker.datePickerMode = .dateAndTime
         let timeZone = TimeZone.init(identifier: "America/New_York")
@@ -43,7 +44,6 @@ class DateTableViewCell: UITableViewCell {
     
     @IBAction func didChangeDate() -> Void {
         print(datePicker.date)
-        todoItem.date = datePicker.date
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
