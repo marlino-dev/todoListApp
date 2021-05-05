@@ -15,19 +15,38 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private var data = [ToDoItem]()
     
+    @IBAction func didTapAddButton(_ sender: Any) {
+        let modalController = self.storyboard?.instantiateViewController(withIdentifier: "add") as? AddViewController
+        present(modalController!, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ReloadManager.shared.HomeVC = self
         data = realm.objects(ToDoItem.self).map({ $0 })
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         data = realm.objects(ToDoItem.self).map({ $0 })
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.reloadData()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        data = realm.objects(ToDoItem.self).map({ $0 })
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.reloadData()
     }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,11 +55,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if (data[indexPath.row].important == true) {
-            cell.textLabel?.text = "‼️ " + data[indexPath.row].title!
-        } else {
-            cell.textLabel?.text = data[indexPath.row].title!
-        }
+        cell.textLabel?.text = data[indexPath.row].title!
         
         return cell
     }
@@ -52,14 +67,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Action sheet
         let actionsheet = UIAlertController(title: item.title, message: "Edit this item", preferredStyle: .actionSheet)
-        
-        actionsheet.addAction(UIAlertAction(title: "Mark as Important", style: .default, handler: {action in
-                    let result = self.realm.objects(ToDoItem.self).filter("title = '\(item.title!)'").first
-            try! self.realm.write {
-                        result!.important = true
-                    }
-            tableView.reloadData()
-        }))
         
         actionsheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
             return
@@ -86,7 +93,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func refresh() {
         data = realm.objects(ToDoItem.self).map({ $0 })
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
     
 }
