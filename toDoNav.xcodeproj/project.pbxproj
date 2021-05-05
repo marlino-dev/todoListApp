@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A521A1BD263F1D5A000348E3 /* reloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521A1BC263F1D5A000348E3 /* reloadManager.swift */; };
+		A521A1C1263F9A6E000348E3 /* labelCellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521A1C0263F9A6E000348E3 /* labelCellManager.swift */; };
+		A521A1C4263F9B00000348E3 /* datePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521A1C3263F9B00000348E3 /* datePickerManager.swift */; };
 		A5C1F16C26390E0A0076C36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F16B26390E0A0076C36C /* AppDelegate.swift */; };
 		A5C1F16E26390E0A0076C36C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */; };
 		A5C1F17326390E0A0076C36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17126390E0A0076C36C /* Main.storyboard */; };
 		A5C1F17526390E0A0076C36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17426390E0A0076C36C /* Assets.xcassets */; };
 		A5C1F17826390E0A0076C36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1F17626390E0A0076C36C /* LaunchScreen.storyboard */; };
 		A5C1F1822639105D0076C36C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1812639105D0076C36C /* HomeViewController.swift */; };
-		A5C1F1862639112E0076C36C /* ImportantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1852639112E0076C36C /* ImportantViewController.swift */; };
 		A5C1F196263919210076C36C /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F195263919210076C36C /* ToDoItem.swift */; };
 		A5C1F1BC263A03930076C36C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1BB263A03930076C36C /* AddViewController.swift */; };
 		A5C1F1C0263A3A2D0076C36C /* labelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F1BE263A3A2D0076C36C /* labelCell.swift */; };
@@ -26,6 +28,9 @@
 /* Begin PBXFileReference section */
 		2121FC4292C38EE728FEE134 /* Pods-toDoNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoNav.release.xcconfig"; path = "Target Support Files/Pods-toDoNav/Pods-toDoNav.release.xcconfig"; sourceTree = "<group>"; };
 		3BCE9B3D2B7697A24201037E /* Pods-toDoNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoNav.debug.xcconfig"; path = "Target Support Files/Pods-toDoNav/Pods-toDoNav.debug.xcconfig"; sourceTree = "<group>"; };
+		A521A1BC263F1D5A000348E3 /* reloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reloadManager.swift; sourceTree = "<group>"; };
+		A521A1C0263F9A6E000348E3 /* labelCellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCellManager.swift; sourceTree = "<group>"; };
+		A521A1C3263F9B00000348E3 /* datePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datePickerManager.swift; sourceTree = "<group>"; };
 		A5C1F16826390E0A0076C36C /* toDoNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1F16B26390E0A0076C36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +39,6 @@
 		A5C1F17726390E0A0076C36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C1F17926390E0A0076C36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C1F1812639105D0076C36C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A5C1F1852639112E0076C36C /* ImportantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantViewController.swift; sourceTree = "<group>"; };
 		A5C1F195263919210076C36C /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		A5C1F1BB263A03930076C36C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A5C1F1BE263A3A2D0076C36C /* labelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCell.swift; sourceTree = "<group>"; };
@@ -88,13 +92,15 @@
 				A5C1F16B26390E0A0076C36C /* AppDelegate.swift */,
 				A5C1F16D26390E0A0076C36C /* SceneDelegate.swift */,
 				A5C1F1812639105D0076C36C /* HomeViewController.swift */,
-				A5C1F1852639112E0076C36C /* ImportantViewController.swift */,
+				A521A1BC263F1D5A000348E3 /* reloadManager.swift */,
+				A521A1C0263F9A6E000348E3 /* labelCellManager.swift */,
 				A5C1F195263919210076C36C /* ToDoItem.swift */,
 				A5C1F17126390E0A0076C36C /* Main.storyboard */,
 				A5C1F17426390E0A0076C36C /* Assets.xcassets */,
 				A5C1F17626390E0A0076C36C /* LaunchScreen.storyboard */,
 				A5C1F17926390E0A0076C36C /* Info.plist */,
 				A5C1F1BB263A03930076C36C /* AddViewController.swift */,
+				A521A1C3263F9B00000348E3 /* datePickerManager.swift */,
 				A5C1F1C3263A4D170076C36C /* DateTableViewCell.swift */,
 				A5C1F1C4263A4D170076C36C /* DateTableViewCell.xib */,
 				A5C1F1BE263A3A2D0076C36C /* labelCell.swift */,
@@ -229,12 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C1F196263919210076C36C /* ToDoItem.swift in Sources */,
+				A521A1C4263F9B00000348E3 /* datePickerManager.swift in Sources */,
 				A5C1F1C0263A3A2D0076C36C /* labelCell.swift in Sources */,
+				A521A1BD263F1D5A000348E3 /* reloadManager.swift in Sources */,
 				A5C1F16C26390E0A0076C36C /* AppDelegate.swift in Sources */,
+				A521A1C1263F9A6E000348E3 /* labelCellManager.swift in Sources */,
 				A5C1F1C5263A4D170076C36C /* DateTableViewCell.swift in Sources */,
 				A5C1F1BC263A03930076C36C /* AddViewController.swift in Sources */,
 				A5C1F16E26390E0A0076C36C /* SceneDelegate.swift in Sources */,
-				A5C1F1862639112E0076C36C /* ImportantViewController.swift in Sources */,
 				A5C1F1822639105D0076C36C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
