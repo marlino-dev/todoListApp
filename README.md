@@ -10,6 +10,4 @@
 * Transferring data between different view controllers.
 
 ### Screenshots ###
-<img src="images/home.png" alt="home" style="width:200px;"/> 
-<img src="images/add-view.png" alt="add" style="width:200px;"/> 
-<img src="images/edit-view.png" alt="edit" style="width:200px;"/>
+<img src="images/home.png" alt="home" style="width:200"/> <img src="images/add-view.png" alt="add" style="width:200"/> <img src="images/edit-view.png" alt="edit" style="width:200"/>
