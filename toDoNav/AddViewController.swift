@@ -54,9 +54,9 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if (section == 0) {
-            return "To-do Item"
+            return "To-do Item Title"
         } else {
-            return "Schedule a Time"
+            return "Schedule a Day/Time"
         }
     }
     
